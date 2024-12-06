@@ -1,0 +1,12 @@
+[Unit]
+Description=Rust Dummy Service
+After=network.target
+
+[Service]
+Type=simple
+User=chmo
+ExecStart=/home/chmo/rust-dummy-service/target/release/rust-dummy-service
+# Restart=on-failure
+
+[Install]
+# WantedBy=multi-user.target
